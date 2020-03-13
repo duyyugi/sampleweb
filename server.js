@@ -32,7 +32,7 @@ app.use('/sp_aothun',sp_aothunRouter)
 app.use('/sp_aosomi',sp_aosomiRouter)
 
 var mongoose = require('mongoose')
-var uri="mongodb+srv://hahaha:haivl0234@cluster0-jdbz6.gcp.mongodb.net/test?retryWrites=true&w=majority";
+var uri="mongodb+srv://duyyugi0234:duyduyduy123@cluster0-cpcja.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
 mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology: true},);
 const db = mongoose.connection
