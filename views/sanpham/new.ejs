@@ -1,0 +1,34 @@
+<h2>Tạo sản phẩm mới</h2>
+
+<form action="/sanpham" method="POST" enctype="multipart/form-data">
+    <div>
+        <label>Tên</label>
+        <input type="text" name="ten" value="<%=sanpham.ten%>">
+    </div>
+    <div>
+        <label>Loại</label>
+        <input type="text" name="loai" value="<%=sanpham.loai%>" list="loaiSanPham">
+        <datalist id="loaiSanPham">
+            <option value="Áo sơ mi">
+            <option value="Áo thun">
+            <option value="Quần tây">
+        </datalist>
+    </div>
+    <div>
+        <lable>Mô tả</lable>
+        <textarea name=moTa value ="<%=sanpham.moTa%>"></textarea>
+    </div>
+    <div>
+        <lable>Giá</lable>
+        <input type="number" name="gia" min ="1"value="<%=sanpham.gia%>">
+    </div>
+    <div>
+        <lable>Số lượng tồn</lable>
+        <input type="number" name="soLuongTon" min ="0" value="<%=sanpham.soLuongTon%>">
+    </div>
+    <div>
+        <lable>Hình ảnh</lable>
+        <input type="file" name="hinhAnh" value ="<%=sanpham.hinhAnh%>">
+    </div>
+    <button type="submit">Tạo</button>
+</form>
